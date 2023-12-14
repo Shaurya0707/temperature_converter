@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("background\ image2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    
+    max-width: 800px;
+   
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.4);
+    font-family: sans-serif;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: #c1e2ed;
+}
+
+#temperatureInput {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+    color: blue;
+    letter-spacing: 1.2px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #41748b;
+}
+
+p.para {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    padding: 18px 0;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+.radio-group {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: aqua;
+    text-align: center;
+}
+
+button#convert {
+    border: 4px solid #00ffb5;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: rebeccapurple;
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label.label {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+
+input.Result {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: blue;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #41748b;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; 
+        padding: 10px; 
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .radio-group label {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .para {
+        font-size: 16px;
+    }
+
+    .Result {
+        width: 100%;
+    }
+}
